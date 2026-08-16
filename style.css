@@ -277,6 +277,7 @@ figcaption{ margin-top: 12px; font-family: var(--font-mono); font-size: 12px; co
 .gallery-wrap {
   position: relative;
   width: 100%;
+  max-width: 100%; /* Prevents container blowout */
 }
 
 .gallery-slider {
@@ -296,6 +297,7 @@ figcaption{ margin-top: 12px; font-family: var(--font-mono); font-size: 12px; co
 
 .gallery-slider .gallery-item {
   flex: 0 0 100%;
+  min-width: 0; /* Forces flexbox to respect the container width */
   scroll-snap-align: center;
   margin: 0;
   display: flex;
