@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Praharsha Chittathuru — Histopathology &amp; Self-Supervised Learning</title>
+<meta name="description" content="Praharsha Chittathuru — PhD researcher at ICube, University of Strasbourg, working on ontology-enhanced multimodal self-supervised learning for histopathology.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-nav" id="top">
+  <a class="nav-mark" href="#top">CHiP</a>
+  <nav aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#work">Work</a>
+    <a href="#publications">Publications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navSheet" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="nav-sheet" id="navSheet">
+  <a href="#about">About</a>
+  <a href="#research">Research</a>
+  <a href="#work">Work</a>
+  <a href="#publications">Publications</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-visual">
+      <p class="reticle-label reticle-top">RENAL HISTOPATHOLOGY · WHOLE SLIDE IMAGE</p>
+      <div class="scope-wrap">
+        <div class="scope-ring-outer" aria-hidden="true"></div>
+        <div class="scope">
+          <div class="scope-glow" aria-hidden="true"></div>
+          <video
+            class="tissue-video"
+            id="tissueVideo"
+            poster="assets/tissue-hero.jpg"
+            autoplay muted loop playsinline preload="auto"
+            aria-label="Multiple tissue structures across a whole-slide histopathology image">
+            <source src="assets/hero-video.mp4" type="video/mp4">
+          </video>
+          <div class="scope-ring" aria-hidden="true"></div>
+        </div>
+      </div>
+      <p class="reticle-label reticle-bottom">WHOLE-SLIDE IMAGE ANNOTATIONS</p>
+    </div>
+
+    <div class="hero-copy">
+      <p class="eyebrow">PhD Researcher — ICube, University of Strasbourg</p>
+      <h1>Himala Praharsha</h1>
+      <p class="hero-thesis">Ontology-Enhanced Multi-Modal Self-Supervised Learning for Histopathology</p>
+      <p class="hero-sub">I build deep learning models that read tissue the way pathologists do by combining image, language, and domain ontologies to segment and understand histopathology slides to find rare disease symptoms. I also focus on reducing the annotation burden of pathology slides by developing deep learning based segmentation models that learn from partial annotations.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#work">See selected work</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+      <ul class="hero-links">
+        <li><a href="https://scholar.google.com/citations?user=mpRpm88AAAAJ&hl=en&authuser=1" target="_blank" rel="noopener">Google Scholar</a></li>
+        <li><a href="https://github.com/Praharsha-Himala" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/himala-praharsha-chittathuru-089263257/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-head">
+      <span class="section-eyebrow">Fig. 00</span>
+      <h2>About</h2>
+    </div>
+    <div class="about-grid">
+      <div class="portrait-frame">
+        <div class="portrait-placeholder" id="portraitSlot">
+          <img src="assets/praharsha.jpeg" alt="Chittathuru Himala Praharsha" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+      </div>
+      <div class="about-copy">
+        <p>I'm Himala Praharsha — I go by Praharsha. I recently completed my BS&#8209;MS in Data Sciences at IISER Thiruvananthapuram, and this autumn I'm joining <strong>ICube</strong> at the <strong>University of Strasbourg</strong> as a doctoral researcher under the <strong>ENACT-HealthTech</strong> program, within École Doctorale MSII.</p>
+        <p>My PhD, <em>“Ontology-Enhanced Multi-Modal Self-Supervised Learning for Histopathology,”</em> will explore how models can learn what a pathologist knows — the vocabulary, the hierarchy of tissue structures, the visual grammar of disease without needing every pixel hand-labeled. I work at the intersection of self-supervised vision, vision-language models, and structured domain knowledge (ontologies) to make histopathology segmentation more label-efficient and clinically grounded.</p>
+        <p>Before this, my undergraduate research moved across attention mechanisms in several imaging domains such as driver monitoring, agricultural pest detection, and neonatal EEG — before settling into medical imaging, where my major project addressed multi-structure renal histopathology segmentation from partial annotations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH FOCUS -->
+  <section class="section" id="research">
+    <div class="section-head">
+      <span class="section-eyebrow">Fig. 01</span>
+      <h2>Research focus</h2>
+    </div>
+    <div class="focus-grid">
+      <article class="focus-card">
+        <span class="focus-index">01</span>
+        <h3>Multimodal self-supervised learning</h3>
+        <p>Learning tissue representations by jointly encoding histopathology images and paired text.</p>
+      </article>
+      <article class="focus-card">
+        <span class="focus-index">02</span>
+        <h3>Ontology-guided representation learning</h3>
+        <p>Injecting structured domain knowledge (tissue and disease ontologies) into vision-language pretraining.</p>
+      </article>
+      <article class="focus-card">
+        <span class="focus-index">03</span>
+        <h3>Label-efficient segmentation architectures</h3>
+        <p>Designing architectures that handle partially annotated data for precise structure segmentation.</p>
+      </article>
+      <article class="focus-card">
+        <span class="focus-index">04</span>
+        <h3>Vision-language grounding for pathology</h3>
+        <p>Adapting CLIP-styl models to the pathology domain to pixel-level predictions.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- SELECTED WORK / PROJECTS -->
+  <section class="section" id="work">
+    <div class="section-head">
+      <span class="section-eyebrow">Fig. 02</span>
+      <h2>Selected work</h2>
+    </div>
+    <div class="work-list">
+
+      <article class="work-item">
+        <div class="work-number">01</div>
+        <div class="work-body">
+          <h3>Leveraging Partial Annotations for Multi-Structure Segmentation in Renal Histopathology</h3>
+          <p class="work-meta">BS&#8209;MS Major Project · IISER Thiruvananthapuram</p>
+          <p>Developed vision-language segmentation model that learn multiple renal tissue structures simultaneously from incomplete, partially-annotated ground truth.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section class="section" id="publications">
+    <div class="section-head">
+      <span class="section-eyebrow">Fig. 03</span>
+      <h2>Publications</h2>
+    </div>
+    <ol class="pub-list">
+      <li class="pub-item">
+        <div class="pub-year">2025</div>
+        <div class="pub-body">
+          <h3>Detection of Pre-Ictal Epileptic Events Using a Self-Attention Based Neural Network from Raw Neonatal EEG Data</h3>
+          <p class="pub-authors">Kondaveeti Tejaswi, Madala Vikas, <strong>Chittathuru Himala Praharsha</strong>, et al., Saptarshi Bej</p>
+          <a class="pub-link" href="https://doi.org/10.1016/j.compbiomed.2025.110518" target="_blank" rel="noopener">doi.org/10.1016/j.compbiomed.2025.110518 →</a>
+        </div>
+      </li>
+      <li class="pub-item">
+        <div class="pub-year">2024</div>
+        <div class="pub-body">
+          <h3>CBAM VGG16: An Efficient Driver Distraction Classification Using CBAM Embedded VGG16 Architecture</h3>
+          <p class="pub-authors"><strong>Chittathuru Himala Praharsha</strong>, Alwin Poulose</p>
+          <p class="pub-venue">Computers in Biology and Medicine, Vol. 180, 108945</p>
+          <a class="pub-link" href="https://doi.org/10.1016/j.compbiomed.2024.108945" target="_blank" rel="noopener">doi.org/10.1016/j.compbiomed.2024.108945 →</a>
+        </div>
+      </li>
+      <li class="pub-item">
+        <div class="pub-year">2024</div>
+        <div class="pub-body">
+          <h3>Comprehensive Investigation of Machine Learning and Deep Learning Networks for Identifying Multispecies Tomato Insect Images</h3>
+          <p class="pub-authors"><strong>Chittathuru Himala Praharsha</strong>, Alwin Poulose, Chetan Badgujar</p>
+          <p class="pub-venue">Sensors, 24, 7858</p>
+          <a class="pub-link" href="https://doi.org/10.3390/s24237858" target="_blank" rel="noopener">doi.org/10.3390/s24237858 →</a>
+        </div>
+      </li>
+    </ol>
+    <p class="pub-more">For the full and most current list, see <a href="https://scholar.google.com/citations?user=mpRpm88AAAAJ&hl=en&authuser=1" target="_blank" rel="noopener">Google Scholar →</a></p>
+  </section>
+
+  <!-- ACHIEVEMENTS + EDUCATION -->
+  <section class="section" id="timeline">
+    <div class="section-head">
+      <span class="section-eyebrow">Fig. 04</span>
+      <h2>Education &amp; recognition</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-when">2026 —</div>
+        <div class="timeline-what">
+          <h3>PhD, Ontology-Enhanced Multi-Modal Self-Supervised Learning for Histopathology</h3>
+          <p>ICube (UMR 7357), University of Strasbourg · ENACT HealthTech Program · École Doctorale MSII (ED 269)</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-when">2021 – 2026</div>
+        <div class="timeline-what">
+          <h3>BS&#8209;MS, Data Sciences</h3>
+          <p>Indian Institute of Science Education and Research, Thiruvananthapuram (IISER TVM)</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-when">Award</div>
+        <div class="timeline-what">
+          <h3>Best Undergraduate Researcher, Data Sciences</h3>
+          <p>Indian Institute of Science Education and Research, Thiruvananthapuram</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-contact" id="contact">
+    <div class="section-head">
+      <span class="section-eyebrow">Fig. 05</span>
+      <h2>Get in touch</h2>
+    </div>
+    <div class="contact-grid">
+      <p class="contact-lede">Reach out about the PhD work, collaborations, or anything histopathology and self-supervised learning.</p>
+      <div class="contact-links">
+        <a class="contact-row" href="mailto:chittathuru@etu.unistra.fr">
+          <span class="contact-label">Strasbourg</span>
+          <span class="contact-value">chittathuru@etu.unistra.fr</span>
+        </a>
+        <a class="contact-row" href="https://scholar.google.com/citations?user=mpRpm88AAAAJ&hl=en&authuser=1" target="_blank" rel="noopener">
+          <span class="contact-label">Scholar</span>
+          <span class="contact-value">mpRpm88AAAAJ</span>
+        </a>
+        <a class="contact-row" href="https://github.com/Praharsha-Himala" target="_blank" rel="noopener">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">Praharsha-Himala</span>
+        </a>
+        <a class="contact-row" href="https://www.linkedin.com/in/himala-praharsha-chittathuru-089263257/" target="_blank" rel="noopener">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">himala-praharsha-chittathuru</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Chittathuru Himala Praharsha · Strasbourg, France</p>
+  <a href="#top" class="footer-top">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
