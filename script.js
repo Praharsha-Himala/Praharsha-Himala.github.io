@@ -35,3 +35,20 @@ if (tissueVideo) {
     tissueVideo.addEventListener('loadeddata', tryPlay, { once: true });
   }
 }
+
+// Gallery Slider
+const slider = document.getElementById('gallerySlider');
+const sliderPrev = document.getElementById('sliderPrev');
+const sliderNext = document.getElementById('sliderNext');
+
+if (slider && sliderPrev && sliderNext) {
+  sliderNext.addEventListener('click', () => {
+    // Scroll right by the width of one image slide
+    slider.scrollBy({ left: slider.clientWidth, behavior: 'smooth' });
+  });
+
+  sliderPrev.addEventListener('click', () => {
+    // Scroll left by the width of one image slide
+    slider.scrollBy({ left: -slider.clientWidth, behavior: 'smooth' });
+  });
+}

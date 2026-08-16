@@ -158,7 +158,7 @@ h1,h2,h3{ font-family: var(--font-display); font-weight: 500; margin: 0; color: 
 }
 
 @media (prefers-reduced-motion: reduce){
-  .tissue-video{ /* poster frame only; browsers already pause autoplay under this setting in most cases */ }
+  /* poster frame only; browsers already pause autoplay under this setting in most cases */
 }
 
 .eyebrow{
@@ -273,6 +273,84 @@ figcaption{ margin-top: 12px; font-family: var(--font-mono); font-size: 12px; co
 .timeline-what h3{ font-size: 1.02rem; font-weight: 500; margin-bottom: 6px; line-height: 1.4; }
 .timeline-what p{ color: var(--ink-dim); font-size: 14.5px; margin: 0; }
 
+/* ---- Gallery Slider ---- */
+.gallery-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.gallery-slider {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.gallery-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-slider .gallery-item {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-item img {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Creates a nice cinematic slide ratio */
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--line-strong);
+  background: var(--bg-panel);
+  transition: border-color 0.2s ease;
+}
+
+.gallery-item img:hover {
+  border-color: var(--eosin);
+}
+
+.gallery-item figcaption {
+  margin-top: 12px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--ink-dim);
+  text-align: center;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.slider-btn {
+  background: var(--bg-panel);
+  border: 1px solid var(--line-strong);
+  color: var(--ink);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  font-family: var(--font-body);
+  font-size: 18px;
+}
+
+.slider-btn:hover {
+  border-color: var(--eosin);
+  color: var(--eosin);
+}
 /* ---- Contact ---- */
 .section-contact{ padding-bottom: clamp(80px, 12vh, 140px); }
 .contact-lede{ color: var(--ink-dim); max-width: 46ch; margin: 0 0 32px; font-size: 16px; }
